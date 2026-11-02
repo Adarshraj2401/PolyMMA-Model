@@ -1,0 +1,50 @@
+{
+  "dataset_label": "SYNTHETIC DEMO DATA - NOT ASPEN SIMULATION OUTPUT",
+  "number_of_cases": 50,
+  "profiles_per_case": 41,
+  "features": [
+    "initial_temp_C",
+    "target_temp_C",
+    "initiator_time_h",
+    "batch_duration_h"
+  ],
+  "bounds": {
+    "initial_temp_C": [
+      30.0,
+      70.0
+    ],
+    "target_temp_C": [
+      80.0,
+      130.0
+    ],
+    "initiator_time_h": [
+      0.5,
+      1.5
+    ],
+    "batch_duration_h": [
+      1.0,
+      3.0
+    ]
+  },
+  "reported_baseline_anchor": {
+    "initial_temp_C": 40.0,
+    "target_temp_C": 105.0,
+    "initiator_time_h": 1.01,
+    "batch_duration_h": 2.0
+  },
+  "reported_baseline_outputs": {
+    "conversion_pct": 89.91,
+    "resin_yield_kg": 3034.5,
+    "dpn": 71.14,
+    "dpw": 227.26,
+    "pdi": 3.195,
+    "heat_duty_MMkcal": 0.508
+  },
+  "notes": [
+    "The R-101 baseline KPI values are taken from the user's Bi-Weekly Report No. 6.",
+    "The report's example current-configuration metrics have no associated input settings and were not used as a training point.",
+    "All non-baseline cases are synthetic physics-inspired illustrations, not Aspen runs.",
+    "All time-series profiles, including the baseline profile, are synthetic because measured profiles were not supplied.",
+    "Do not report validation scores on this dataset as real Aspen prediction accuracy. Replace with actual Aspen runs before engineering use."
+  ]
+}

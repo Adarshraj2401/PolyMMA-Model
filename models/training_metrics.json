@@ -1,0 +1,65 @@
+{
+  "dataset_label": "SYNTHETIC DEMO DATA - NOT ASPEN SIMULATION OUTPUT",
+  "cases": 50,
+  "features": [
+    "initial_temp_C",
+    "target_temp_C",
+    "initiator_time_h",
+    "batch_duration_h"
+  ],
+  "targets": [
+    "conversion_pct",
+    "resin_yield_kg",
+    "dpn",
+    "dpw",
+    "pdi",
+    "heat_duty_MMkcal",
+    "curve_tau_h",
+    "curve_shape"
+  ],
+  "holdout_fraction": 0.2,
+  "holdout_metrics_on_synthetic_data_only": {
+    "conversion_pct": {
+      "mae": 0.4611516016717445,
+      "rmse": 0.5903583470455482,
+      "r2": 0.9551049206622302
+    },
+    "resin_yield_kg": {
+      "mae": 18.607654954819555,
+      "rmse": 24.248059551436427,
+      "r2": 0.9468910231659118
+    },
+    "dpn": {
+      "mae": 0.4427319807842366,
+      "rmse": 0.5289092590727389,
+      "r2": 0.9549869064827802
+    },
+    "dpw": {
+      "mae": 2.1122909636520975,
+      "rmse": 2.766119177906387,
+      "r2": 0.8546892036062518
+    },
+    "pdi": {
+      "mae": 0.00427172897995014,
+      "rmse": 0.005094179833929042,
+      "r2": -0.1998429202820664
+    },
+    "heat_duty_MMkcal": {
+      "mae": 0.018017446543383674,
+      "rmse": 0.02702793988765887,
+      "r2": 0.409212879420948
+    },
+    "curve_tau_h": {
+      "mae": 0.005033059403444157,
+      "rmse": 0.006435254422157954,
+      "r2": 0.9960035474200496
+    },
+    "curve_shape": {
+      "mae": 0.008754429145488341,
+      "rmse": 0.009987359878697926,
+      "r2": 0.9090902084162027
+    }
+  },
+  "warning": "Synthetic proof-of-concept only. Do not use for engineering decisions or claim Aspen-validated accuracy.",
+  "model_file": "models/polymma_surrogate.joblib"
+}
